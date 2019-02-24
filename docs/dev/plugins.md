@@ -69,7 +69,7 @@ A fairly basic example follows:
 ```js
 'use strict';
 
-module.exports = (app, lando) => {
+module.exports = (lando) => {
   // Log that this plugin has loaded
   lando.events.on('post-bootstrap-config', () => {
     lando.log.info('Custom plugin loaded!');
